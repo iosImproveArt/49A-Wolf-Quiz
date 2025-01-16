@@ -39,6 +39,7 @@ struct WolfApp: App {
     var body: some Scene {
         WindowGroup {
             ContentViewWolf49()
+                .colorScheme(.dark)
         }
     }
 }

@@ -41,7 +41,7 @@ struct FactsViewWolf49: View {
                     .overlay {
                         VStack {
                             Text(fact.title)
-                                .withFont(size: 20, weight: .regular, color: .hex("ADE552"))
+                                .withFont(size: 20, weight: .regular, color: .hex("A5FFFE"))
                                 .padding(.top, 16)
                                 .padding(.horizontal)
                             Spacer()
@@ -102,7 +102,7 @@ struct FactsViewWolf49: View {
         VStack {
             if let fact = selectedFact {
                 Text(fact.title)
-                    .withFont(size: 22, weight: .regular, color: .hex("ADE552"))
+                    .withFont(size: 22, weight: .regular, color: .hex("A5FFFE"))
                     .padding(.top, 12)
                 
                 ScrollView {
@@ -116,10 +116,10 @@ struct FactsViewWolf49: View {
                 VStack(spacing: 0) {
                     Rectangle()
                         .frame(height: 2)
-                        .foregroundColor(.hex("ADE552"))
+                        .foregroundColor(.hex("A5FFFE"))
                     
                     Rectangle()
-                        .foregroundColor(.hex("402E27"))
+                        .foregroundColor(.hex("402E43"))
                         .frame(height: 55)
                         .overlay {
                             Text("Close")
@@ -131,7 +131,7 @@ struct FactsViewWolf49: View {
             }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
-                Color.hex("402E27")
+                Color.hex("402E43")
                     .edgesIgnoringSafeArea(.all)
             }
     }

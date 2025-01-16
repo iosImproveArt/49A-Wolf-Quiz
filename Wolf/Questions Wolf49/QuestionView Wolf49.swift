@@ -332,5 +332,5 @@ struct QuestionViewWolf49: View {
 }
 
 #Preview {
-    QuestionViewWolf49(type: .withC)
+    QuestionViewWolf49(type: .oneP)
 }
