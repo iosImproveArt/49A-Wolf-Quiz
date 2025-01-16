@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct PrivacyViewChiken666: View {
+struct PrivacyViewWolf49: View {
     @AppStorage("firstInApp") var firstInApp = true
     @Environment(\.dismiss) var dismiss
     @Binding var showLoading: Bool
@@ -11,41 +11,31 @@ struct PrivacyViewChiken666: View {
     @AppStorage("urlString") var urlString = ""
     
     var bg: Color {
-        urlString.isEmpty ? Color.hex("#C2215D"): .black
+        urlString.isEmpty ? Color.hex("#563A28"): .black
     }
     
-    var isLoggedIn: Bool = true
-    var currentTemperature: Double = 22.5
-    var favoriteColors: [String] = ["Blue", "Green", "Purple"]
+    var itemPrice: Double = 149.99
+    var userPoints: Int = 350
+    var isActiveUser: Bool = false
+    var taskList: [String] = ["Finish homework", "Buy groceries", "Go for a run"]
 
-    // Функції
-    func greetUser(name: String) -> String {
-        return "Hello, \(name)! Welcome to the app."
+    func applyDiscount(to price: Double, discount: Double) -> Double {
+        return price - (price * discount / 100)
     }
 
-    func calculateSquare(of number: Int) -> Int {
-        return number * number
+    func checkPointsEligibility(points: Int) -> Bool {
+        return points >= 500
     }
 
-    func fetchCurrentDate() -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        return formatter.string(from: Date())
+
+    func randomGreeting() -> String {
+        let greetings = ["Hello!", "Hi!", "Greetings!", "Welcome!", "Howdy!"]
+        return greetings.randomElement() ?? "Hello!"
     }
 
-    func findMaximum(numbers: [Int]) -> Int? {
-        return numbers.max()
-    }
-
-    func isPrime(_ number: Int) -> Bool {
-        guard number > 1 else { return false }
-        for i in 2..<number {
-            if number % i == 0 {
-                return false
-            }
-        }
-        return true
+    func calculateTotalPrice(items: [Double], taxRate: Double) -> Double {
+        let totalPrice = items.reduce(0, +)
+        return totalPrice + (totalPrice * taxRate / 100)
     }
     
     
@@ -133,5 +123,5 @@ struct PrivacyViewChiken666: View {
 }
 
 #Preview {
-    PrivacyViewChiken666(showLoading: .constant(true), fromMainView: false)
+    PrivacyViewWolf49(showLoading: .constant(true), fromMainView: false)
 }

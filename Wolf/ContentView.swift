@@ -7,43 +7,33 @@
 
 import SwiftUI
 
-struct ContentViewChiken666: View {
+struct ContentViewWolf49: View {
     @AppStorage("notificationsAvalible") var notificationsAvalible = true
     @State var showLoading = true
     @State var selectedTab: Tabs = .quiz
     
-     var isLoggedIn: Bool = true
-    var currentTemperature: Double = 22.5
-    var favoriteColors: [String] = ["Blue", "Green", "Purple"]
+    var itemPrice: Double = 149.99
+    var userPoints: Int = 350
+    var isActiveUser: Bool = false
+    var taskList: [String] = ["Finish homework", "Buy groceries", "Go for a run"]
 
-    // Функції
-    func greetUser(name: String) -> String {
-        return "Hello, \(name)! Welcome to the app."
+    func applyDiscount(to price: Double, discount: Double) -> Double {
+        return price - (price * discount / 100)
     }
 
-    func calculateSquare(of number: Int) -> Int {
-        return number * number
+    func checkPointsEligibility(points: Int) -> Bool {
+        return points >= 500
     }
 
-    func fetchCurrentDate() -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        return formatter.string(from: Date())
+
+    func randomGreeting() -> String {
+        let greetings = ["Hello!", "Hi!", "Greetings!", "Welcome!", "Howdy!"]
+        return greetings.randomElement() ?? "Hello!"
     }
 
-    func findMaximum(numbers: [Int]) -> Int? {
-        return numbers.max()
-    }
-
-    func isPrime(_ number: Int) -> Bool {
-        guard number > 1 else { return false }
-        for i in 2..<number {
-            if number % i == 0 {
-                return false
-            }
-        }
-        return true
+    func calculateTotalPrice(items: [Double], taxRate: Double) -> Double {
+        let totalPrice = items.reduce(0, +)
+        return totalPrice + (totalPrice * taxRate / 100)
     }
     
     var body: some View {
@@ -55,13 +45,13 @@ struct ContentViewChiken666: View {
                         
                         switch selectedTab {
                         case .quiz:
-                            QuestionPickViewChiken666()
+                            QuestionPickViewWolf49()
                         case .profile:
-                            ProfileViewChiken666()
+                            ProfileViewWolf49()
                         case .facts:
-                            FactsViewChiken666()
+                            FactsViewWolf49()
                         case .questions:
-                            QuestionsViewChiken666()
+                            QuestionsViewWolf49()
                         }
                         tapBar
                     }.background(2, padding: 0)
@@ -79,7 +69,7 @@ struct ContentViewChiken666: View {
     private var topBar: some View {
         HStack {
             NavigationLink {
-                PrivacyViewChiken666(showLoading: .constant(true), fromMainView: true)
+                PrivacyViewWolf49(showLoading: .constant(true), fromMainView: true)
             } label: {
                 Text("Privacy policy")
                     .withFont(size: 16, weight: .light, color: .hex("FFFFFF"))
@@ -90,9 +80,9 @@ struct ContentViewChiken666: View {
             Button {
                 notificationsAvalible.toggle()
                 if notificationsAvalible {
-                    NotificationManagerChiken666.shared.createDailyNotification()
+                    NotificationManagerWolf49.shared.createDailyNotification()
                 } else {
-                    NotificationManagerChiken666.shared.removePendingNotifications()
+                    NotificationManagerWolf49.shared.removePendingNotifications()
                 }
             } label: {
                 Image("notification.label")
@@ -107,7 +97,8 @@ struct ContentViewChiken666: View {
                 selectedTab = .quiz
             } label: {
                 Image("tab 1")
-                    .opacity(selectedTab == .quiz ? 1: 0.6)
+                    .renderingMode(selectedTab == .quiz ? .template: .original)
+                    .foregroundStyle(.white)
             }
             
             Spacer()
@@ -116,7 +107,8 @@ struct ContentViewChiken666: View {
                 selectedTab = .profile
             } label: {
                 Image("tab 2")
-                    .opacity(selectedTab == .profile ? 1: 0.6)
+                    .renderingMode(selectedTab == .profile ? .template: .original)
+                    .foregroundStyle(.white)
             }
             
             Spacer()
@@ -125,7 +117,8 @@ struct ContentViewChiken666: View {
                 selectedTab = .facts
             } label: {
                 Image("tab 3")
-                    .opacity(selectedTab == .facts ? 1: 0.6)
+                    .renderingMode(selectedTab == .facts ? .template: .original)
+                    .foregroundStyle(.white)
             }
             
             Spacer()
@@ -134,13 +127,14 @@ struct ContentViewChiken666: View {
                 selectedTab = .questions
             } label: {
                 Image("tab 4")
-                    .opacity(selectedTab == .questions ? 1: 0.6)
+                    .renderingMode(selectedTab == .questions ? .template: .original)
+                    .foregroundStyle(.white)
             }
         }.padding(.horizontal, 40)
             .padding(.vertical)
             .padding(.bottom, 50)
             .background {
-                Color.hex("E57CA4")
+                Color.hex("563A28")
                     .opacity(0.85)
                 .edgesIgnoringSafeArea(.all)
             }
@@ -150,7 +144,7 @@ struct ContentViewChiken666: View {
 }
 
 #Preview {
-    ContentViewChiken666(showLoading: false)
+    ContentViewWolf49(showLoading: false)
 }
 
 

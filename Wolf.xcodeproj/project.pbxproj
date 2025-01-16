@@ -12,18 +12,18 @@
 		F6ED4B7C2D3914FC00D98190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ED4B742D3914FC00D98190 /* Preview Assets.xcassets */; };
 		F6ED4B7D2D3914FC00D98190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ED4B762D3914FC00D98190 /* Assets.xcassets */; };
 		F6ED4B8F2D39156200D98190 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = F6ED4B812D39156200D98190 /* privacy.html */; };
-		F6ED4B902D39156200D98190 /* QuestionView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B862D39156200D98190 /* QuestionView Chiken666.swift */; };
-		F6ED4B912D39156200D98190 /* QuestionPickView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B872D39156200D98190 /* QuestionPickView Chiken666.swift */; };
-		F6ED4B922D39156200D98190 /* WebView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B832D39156200D98190 /* WebView Chiken666.swift */; };
-		F6ED4B932D39156200D98190 /* QuestionsView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B7F2D39156200D98190 /* QuestionsView Chiken666.swift */; };
-		F6ED4B942D39156200D98190 /* ImagePicker Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8C2D39156200D98190 /* ImagePicker Chiken666.swift */; };
-		F6ED4B952D39156200D98190 /* Extensions Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B892D39156200D98190 /* Extensions Chiken666.swift */; };
-		F6ED4B962D39156200D98190 /* FactsView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8A2D39156200D98190 /* FactsView Chiken666.swift */; };
-		F6ED4B972D39156200D98190 /* NotificationCenter Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8B2D39156200D98190 /* NotificationCenter Chiken666.swift */; };
-		F6ED4B982D39156200D98190 /* PrivacyView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B822D39156200D98190 /* PrivacyView Chiken666.swift */; };
-		F6ED4B992D39156200D98190 /* ProfileView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8D2D39156200D98190 /* ProfileView Chiken666.swift */; };
-		F6ED4B9A2D39156200D98190 /* QuestionViewModel Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B852D39156200D98190 /* QuestionViewModel Chiken666.swift */; };
-		F6ED4B9B2D39156200D98190 /* LoadingView Chiken666.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B802D39156200D98190 /* LoadingView Chiken666.swift */; };
+		F6ED4B902D39156200D98190 /* QuestionView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B862D39156200D98190 /* QuestionView Wolf49.swift */; };
+		F6ED4B912D39156200D98190 /* QuestionPickView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B872D39156200D98190 /* QuestionPickView Wolf49.swift */; };
+		F6ED4B922D39156200D98190 /* WebView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B832D39156200D98190 /* WebView Wolf49.swift */; };
+		F6ED4B932D39156200D98190 /* QuestionsView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B7F2D39156200D98190 /* QuestionsView Wolf49.swift */; };
+		F6ED4B942D39156200D98190 /* ImagePicker Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8C2D39156200D98190 /* ImagePicker Wolf49.swift */; };
+		F6ED4B952D39156200D98190 /* Extensions Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B892D39156200D98190 /* Extensions Wolf49.swift */; };
+		F6ED4B962D39156200D98190 /* FactsView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8A2D39156200D98190 /* FactsView Wolf49.swift */; };
+		F6ED4B972D39156200D98190 /* NotificationCenter Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8B2D39156200D98190 /* NotificationCenter Wolf49.swift */; };
+		F6ED4B982D39156200D98190 /* PrivacyView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B822D39156200D98190 /* PrivacyView Wolf49.swift */; };
+		F6ED4B992D39156200D98190 /* ProfileView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B8D2D39156200D98190 /* ProfileView Wolf49.swift */; };
+		F6ED4B9A2D39156200D98190 /* QuestionViewModel Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B852D39156200D98190 /* QuestionViewModel Wolf49.swift */; };
+		F6ED4B9B2D39156200D98190 /* LoadingView Wolf49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED4B802D39156200D98190 /* LoadingView Wolf49.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,19 +33,19 @@
 		F6ED4B772D3914FC00D98190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6ED4B782D3914FC00D98190 /* WolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfApp.swift; sourceTree = "<group>"; };
 		F6ED4B7E2D39154700D98190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F6ED4B7F2D39156200D98190 /* QuestionsView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionsView Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B802D39156200D98190 /* LoadingView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView Chiken666.swift"; sourceTree = "<group>"; };
+		F6ED4B7F2D39156200D98190 /* QuestionsView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionsView Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B802D39156200D98190 /* LoadingView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView Wolf49.swift"; sourceTree = "<group>"; };
 		F6ED4B812D39156200D98190 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
-		F6ED4B822D39156200D98190 /* PrivacyView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrivacyView Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B832D39156200D98190 /* WebView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebView Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B852D39156200D98190 /* QuestionViewModel Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionViewModel Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B862D39156200D98190 /* QuestionView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionView Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B872D39156200D98190 /* QuestionPickView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionPickView Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B892D39156200D98190 /* Extensions Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B8A2D39156200D98190 /* FactsView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FactsView Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B8B2D39156200D98190 /* NotificationCenter Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B8C2D39156200D98190 /* ImagePicker Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePicker Chiken666.swift"; sourceTree = "<group>"; };
-		F6ED4B8D2D39156200D98190 /* ProfileView Chiken666.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileView Chiken666.swift"; sourceTree = "<group>"; };
+		F6ED4B822D39156200D98190 /* PrivacyView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrivacyView Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B832D39156200D98190 /* WebView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebView Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B852D39156200D98190 /* QuestionViewModel Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionViewModel Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B862D39156200D98190 /* QuestionView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionView Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B872D39156200D98190 /* QuestionPickView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionPickView Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B892D39156200D98190 /* Extensions Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B8A2D39156200D98190 /* FactsView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FactsView Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B8B2D39156200D98190 /* NotificationCenter Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B8C2D39156200D98190 /* ImagePicker Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePicker Wolf49.swift"; sourceTree = "<group>"; };
+		F6ED4B8D2D39156200D98190 /* ProfileView Wolf49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileView Wolf49.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,47 +89,47 @@
 				F6ED4B7E2D39154700D98190 /* Info.plist */,
 				F6ED4B772D3914FC00D98190 /* ContentView.swift */,
 				F6ED4B782D3914FC00D98190 /* WolfApp.swift */,
-				F6ED4B842D39156200D98190 /* Loading Chiken666 */,
-				F6ED4B8B2D39156200D98190 /* NotificationCenter Chiken666.swift */,
-				F6ED4B882D39156200D98190 /* Questions Chiken666 */,
-				F6ED4B892D39156200D98190 /* Extensions Chiken666.swift */,
+				F6ED4B842D39156200D98190 /* Loading Wolf49 */,
+				F6ED4B8B2D39156200D98190 /* NotificationCenter Wolf49.swift */,
+				F6ED4B882D39156200D98190 /* Questions Wolf49 */,
+				F6ED4B892D39156200D98190 /* Extensions Wolf49.swift */,
 				F6ED4B762D3914FC00D98190 /* Assets.xcassets */,
-				F6ED4B8A2D39156200D98190 /* FactsView Chiken666.swift */,
-				F6ED4B7F2D39156200D98190 /* QuestionsView Chiken666.swift */,
-				F6ED4B8E2D39156200D98190 /* Profile Chiken666 */,
+				F6ED4B8A2D39156200D98190 /* FactsView Wolf49.swift */,
+				F6ED4B7F2D39156200D98190 /* QuestionsView Wolf49.swift */,
+				F6ED4B8E2D39156200D98190 /* Profile Wolf49 */,
 				F6ED4B752D3914FC00D98190 /* Preview Content */,
 			);
 			path = Wolf;
 			sourceTree = "<group>";
 		};
-		F6ED4B842D39156200D98190 /* Loading Chiken666 */ = {
+		F6ED4B842D39156200D98190 /* Loading Wolf49 */ = {
 			isa = PBXGroup;
 			children = (
-				F6ED4B802D39156200D98190 /* LoadingView Chiken666.swift */,
+				F6ED4B802D39156200D98190 /* LoadingView Wolf49.swift */,
 				F6ED4B812D39156200D98190 /* privacy.html */,
-				F6ED4B822D39156200D98190 /* PrivacyView Chiken666.swift */,
-				F6ED4B832D39156200D98190 /* WebView Chiken666.swift */,
+				F6ED4B822D39156200D98190 /* PrivacyView Wolf49.swift */,
+				F6ED4B832D39156200D98190 /* WebView Wolf49.swift */,
 			);
-			path = "Loading Chiken666";
+			path = "Loading Wolf49";
 			sourceTree = "<group>";
 		};
-		F6ED4B882D39156200D98190 /* Questions Chiken666 */ = {
+		F6ED4B882D39156200D98190 /* Questions Wolf49 */ = {
 			isa = PBXGroup;
 			children = (
-				F6ED4B852D39156200D98190 /* QuestionViewModel Chiken666.swift */,
-				F6ED4B862D39156200D98190 /* QuestionView Chiken666.swift */,
-				F6ED4B872D39156200D98190 /* QuestionPickView Chiken666.swift */,
+				F6ED4B852D39156200D98190 /* QuestionViewModel Wolf49.swift */,
+				F6ED4B862D39156200D98190 /* QuestionView Wolf49.swift */,
+				F6ED4B872D39156200D98190 /* QuestionPickView Wolf49.swift */,
 			);
-			path = "Questions Chiken666";
+			path = "Questions Wolf49";
 			sourceTree = "<group>";
 		};
-		F6ED4B8E2D39156200D98190 /* Profile Chiken666 */ = {
+		F6ED4B8E2D39156200D98190 /* Profile Wolf49 */ = {
 			isa = PBXGroup;
 			children = (
-				F6ED4B8C2D39156200D98190 /* ImagePicker Chiken666.swift */,
-				F6ED4B8D2D39156200D98190 /* ProfileView Chiken666.swift */,
+				F6ED4B8C2D39156200D98190 /* ImagePicker Wolf49.swift */,
+				F6ED4B8D2D39156200D98190 /* ProfileView Wolf49.swift */,
 			);
-			path = "Profile Chiken666";
+			path = "Profile Wolf49";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,18 +207,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6ED4B7A2D3914FC00D98190 /* ContentView.swift in Sources */,
-				F6ED4B902D39156200D98190 /* QuestionView Chiken666.swift in Sources */,
-				F6ED4B912D39156200D98190 /* QuestionPickView Chiken666.swift in Sources */,
-				F6ED4B922D39156200D98190 /* WebView Chiken666.swift in Sources */,
-				F6ED4B932D39156200D98190 /* QuestionsView Chiken666.swift in Sources */,
-				F6ED4B942D39156200D98190 /* ImagePicker Chiken666.swift in Sources */,
-				F6ED4B952D39156200D98190 /* Extensions Chiken666.swift in Sources */,
-				F6ED4B962D39156200D98190 /* FactsView Chiken666.swift in Sources */,
-				F6ED4B972D39156200D98190 /* NotificationCenter Chiken666.swift in Sources */,
-				F6ED4B982D39156200D98190 /* PrivacyView Chiken666.swift in Sources */,
-				F6ED4B992D39156200D98190 /* ProfileView Chiken666.swift in Sources */,
-				F6ED4B9A2D39156200D98190 /* QuestionViewModel Chiken666.swift in Sources */,
-				F6ED4B9B2D39156200D98190 /* LoadingView Chiken666.swift in Sources */,
+				F6ED4B902D39156200D98190 /* QuestionView Wolf49.swift in Sources */,
+				F6ED4B912D39156200D98190 /* QuestionPickView Wolf49.swift in Sources */,
+				F6ED4B922D39156200D98190 /* WebView Wolf49.swift in Sources */,
+				F6ED4B932D39156200D98190 /* QuestionsView Wolf49.swift in Sources */,
+				F6ED4B942D39156200D98190 /* ImagePicker Wolf49.swift in Sources */,
+				F6ED4B952D39156200D98190 /* Extensions Wolf49.swift in Sources */,
+				F6ED4B962D39156200D98190 /* FactsView Wolf49.swift in Sources */,
+				F6ED4B972D39156200D98190 /* NotificationCenter Wolf49.swift in Sources */,
+				F6ED4B982D39156200D98190 /* PrivacyView Wolf49.swift in Sources */,
+				F6ED4B992D39156200D98190 /* ProfileView Wolf49.swift in Sources */,
+				F6ED4B9A2D39156200D98190 /* QuestionViewModel Wolf49.swift in Sources */,
+				F6ED4B9B2D39156200D98190 /* LoadingView Wolf49.swift in Sources */,
 				F6ED4B7B2D3914FC00D98190 /* WolfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,45 +7,35 @@
 
 import SwiftUI
 
-struct QuestionViewChiken666: View {
+struct QuestionViewWolf49: View {
     @Environment(\.dismiss) var dismiss
-    @StateObject var vm: QuestionViewModelChiken666
+    @StateObject var vm: QuestionViewModelWolf49
     
-    var isLoggedIn: Bool = true
-    var currentTemperature: Double = 22.5
-    var favoriteColors: [String] = ["Blue", "Green", "Purple"]
+    var itemPrice: Double = 149.99
+    var userPoints: Int = 350
+    var isActiveUser: Bool = false
+    var taskList: [String] = ["Finish homework", "Buy groceries", "Go for a run"]
 
-    // Функції
-    func greetUser(name: String) -> String {
-        return "Hello, \(name)! Welcome to the app."
+    func applyDiscount(to price: Double, discount: Double) -> Double {
+        return price - (price * discount / 100)
     }
 
-    func calculateSquare(of number: Int) -> Int {
-        return number * number
+    func checkPointsEligibility(points: Int) -> Bool {
+        return points >= 500
     }
 
-    func fetchCurrentDate() -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        return formatter.string(from: Date())
+
+    func randomGreeting() -> String {
+        let greetings = ["Hello!", "Hi!", "Greetings!", "Welcome!", "Howdy!"]
+        return greetings.randomElement() ?? "Hello!"
     }
 
-    func findMaximum(numbers: [Int]) -> Int? {
-        return numbers.max()
+    func calculateTotalPrice(items: [Double], taxRate: Double) -> Double {
+        let totalPrice = items.reduce(0, +)
+        return totalPrice + (totalPrice * taxRate / 100)
     }
-
-    func isPrime(_ number: Int) -> Bool {
-        guard number > 1 else { return false }
-        for i in 2..<number {
-            if number % i == 0 {
-                return false
-            }
-        }
-        return true
-    }
-    init(type: GameTypeChiken666) {
-        _vm = StateObject(wrappedValue: QuestionViewModelChiken666(typeOfGame: type))
+    init(type: GameTypeWolf49) {
+        _vm = StateObject(wrappedValue: QuestionViewModelWolf49(typeOfGame: type))
     }
     
     var body: some View {
@@ -342,5 +332,5 @@ struct QuestionViewChiken666: View {
 }
 
 #Preview {
-    QuestionViewChiken666(type: .withC)
+    QuestionViewWolf49(type: .withC)
 }
