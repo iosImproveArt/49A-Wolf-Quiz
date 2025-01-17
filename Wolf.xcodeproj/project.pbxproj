@@ -357,7 +357,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wolf/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Wolf Quiz";
+				INFOPLIST_KEY_CFBundleDisplayName = "Katekno Quiz";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to set a photo for your profile.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -394,7 +394,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wolf/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Wolf Quiz";
+				INFOPLIST_KEY_CFBundleDisplayName = "Katekno Quiz";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to set a photo for your profile.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
