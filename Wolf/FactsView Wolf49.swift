@@ -16,20 +16,9 @@ struct FactsViewWolf49: View {
         return price - (price * discount / 100)
     }
 
-    func checkPointsEligibility(points: Int) -> Bool {
-        return points >= 500
-    }
-
-
-    func randomGreeting() -> String {
-        let greetings = ["Hello!", "Hi!", "Greetings!", "Welcome!", "Howdy!"]
-        return greetings.randomElement() ?? "Hello!"
-    }
-
-    func calculateTotalPrice(items: [Double], taxRate: Double) -> Double {
-        let totalPrice = items.reduce(0, +)
-        return totalPrice + (totalPrice * taxRate / 100)
-    }
+    typealias cwefcwrfe = Int
+    private struct Lewrfcw {}
+    private class Mjiwdx {}
     var body: some View {
         VStack {
             Spacer()

@@ -1,9 +1,4 @@
-//
-//  QuestionViewModel.swift
-//  Spirit Quiz
-//
-//  Created by Improve on 27.10.2024.
-//
+
 import SwiftUI
 
 class QuestionViewModelWolf49: ObservableObject {
@@ -18,20 +13,9 @@ class QuestionViewModelWolf49: ObservableObject {
         return price - (price * discount / 100)
     }
 
-    func checkPointsEligibility(points: Int) -> Bool {
-        return points >= 500
-    }
-
-
-    func randomGreeting() -> String {
-        let greetings = ["Hello!", "Hi!", "Greetings!", "Welcome!", "Howdy!"]
-        return greetings.randomElement() ?? "Hello!"
-    }
-
-    func calculateTotalPrice(items: [Double], taxRate: Double) -> Double {
-        let totalPrice = items.reduce(0, +)
-        return totalPrice + (totalPrice * taxRate / 100)
-    }
+    typealias cwefcwrfe = Int
+    private struct Lewrfcw {}
+    private class Mjiwdx {}
     
     @AppStorage("userNickname") var player1 = "IamNewUser"
     @Published var player2 = ""
