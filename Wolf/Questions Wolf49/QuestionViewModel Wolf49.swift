@@ -19,58 +19,58 @@ class QuestionViewModelWolf49: ObservableObject {
     
     @AppStorage("userNickname") var player1 = "IamNewUser"
     @Published var player2 = ""
-    @Published var heartCount = 3
-    @Published var questionNumber = 1
+    @Published var heartCountWolf49 = 3
+    @Published var questionNumberWolf49 = 1
     
-    @Published var player1RightAnswers = 0
-    @Published var player2RightAnswers = 0
+    @Published var player1RightAnswersWolf49 = 0
+    @Published var player2RightAnswersWolf49 = 0
     
     
-    @Published var listOfQuestions: [QuestionWolf49]
+    @Published var listOfQuestionsWolf49: [QuestionWolf49]
     @Published var answer = ""
     
-    @Published var showFinishView = false
-    @Published var showEnterView = false
+    @Published var showFinishViewWolf49 = false
+    @Published var showEnterViewWolf49 = false
     
-    var currentQuestion: QuestionWolf49 {
-        listOfQuestions[questionNumber - 1]
+    var currentQuestionWolf49: QuestionWolf49 {
+        listOfQuestionsWolf49[questionNumberWolf49 - 1]
     }
     
     init(typeOfGame: GameTypeWolf49) {
         self.typeOfGame = typeOfGame
         
         if typeOfGame == .withC { player2 = "Computer" }
-        if typeOfGame == .withF { showEnterView = true }
-        listOfQuestions =  Array(QuestionWolf49.advancedQuestions.shuffled().prefix(21))
+        if typeOfGame == .withF { showEnterViewWolf49 = true }
+        listOfQuestionsWolf49 =  Array(QuestionWolf49.advancedQuestionsWolf49.shuffled().prefix(21))
     }
     
-    func answerTheQuestion(answer: String) {
+    func answerTheQuestionWolf49(answer: String) {
         self.answer = answer
         
-        if answer == currentQuestion.correctAnswer {
-            if questionNumber % 2 == 0 {
-                player2RightAnswers += 1
+        if answer == currentQuestionWolf49.correctAnswer {
+            if questionNumberWolf49 % 2 == 0 {
+                player2RightAnswersWolf49 += 1
             } else {
-                player1RightAnswers += 1
+                player1RightAnswersWolf49 += 1
             }
         } else if typeOfGame == .oneP {
-            heartCount -= 1
-            if heartCount <= 0 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in showFinishView = true }
+            heartCountWolf49 -= 1
+            if heartCountWolf49 <= 0 {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in showFinishViewWolf49 = true }
                 return
             }
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
-            if questionNumber >= 20 || (typeOfGame == .withC && questionNumber >= 19) {
-                showFinishView = true
+            if questionNumberWolf49 >= 20 || (typeOfGame == .withC && questionNumberWolf49 >= 19) {
+                showFinishViewWolf49 = true
             } else {
                 self.answer = ""
                 if typeOfGame == .withC {
-                    questionNumber += 2
-                    player2RightAnswers += [0, 1].randomElement()!
+                    questionNumberWolf49 += 2
+                    player2RightAnswersWolf49 += [0, 1].randomElement()!
                 } else {
-                    questionNumber += 1
+                    questionNumberWolf49 += 1
                 }
             }
         }
@@ -90,7 +90,7 @@ struct QuestionWolf49 {
     let answerOptions: [String]
     private let wecfwrf = "wrfcwrf"
     
-    static let advancedQuestions: [QuestionWolf49] = [
+    static let advancedQuestionsWolf49: [QuestionWolf49] = [
         QuestionWolf49(
             question: "What is the fastest land animal?",
             correctAnswer: "Cheetah",

@@ -8,14 +8,14 @@ struct ProfileViewWolf49: View {
     @State var userName = ""
     @State var userNickname = ""
     
-    @State var showActionSheetBB = false
-    @State private var showImagePickerBB = false
-    @State private var showCameraPickerBB = false
+    @State var showActionSheetWolf49 = false
+    @State private var showImagePickerWolf49 = false
+    @State private var showCameraPickerWolf49 = false
     @State var ev = false
     @FocusState var textfield
-    @State var showAlert = false
+    @State var showAlertWolf49 = false
     
-    let fieldsColor = Color.hex("B35C5C")
+    let fieldsColorWolf49 = Color.hex("B35C5C")
     
     var itemPrice: Double = 149.99
     var userPoints: Int = 350
@@ -32,7 +32,7 @@ struct ProfileViewWolf49: View {
     var body: some View {
         VStack {
             Button {
-                showActionSheetBB = true
+                showActionSheetWolf49 = true
             } label: {
                 Group {
                     if userPhoto.isEmpty {
@@ -90,14 +90,14 @@ struct ProfileViewWolf49: View {
                     UserDefaults.standard.set(userPhoto, forKey: "userPhoto")
                     UserDefaults.standard.set(userName, forKey: "userName")
                     UserDefaults.standard.set(userNickname, forKey: "userNickname")
-                    showAlert = true
+                    showAlertWolf49 = true
                 } label: {
                     Image("green.button.bg")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .overlay {
                             Text("Save")
-                                .withFont(size: 18.6, weight: .regular, color: .hex("0D0D0D"))
+                                .withFontWolf49(size: 18.6, weight: .regular, color: .hex("0D0D0D"))
                         }
                 }
                 
@@ -114,7 +114,7 @@ struct ProfileViewWolf49: View {
                         .aspectRatio(contentMode: .fit)
                         .overlay {
                             Text("Delete")
-                                .withFont(size: 18.6, weight: .regular, color: .hex("0D0D0D"))
+                                .withFontWolf49(size: 18.6, weight: .regular, color: .hex("0D0D0D"))
                         }
                 }
             }
@@ -123,19 +123,19 @@ struct ProfileViewWolf49: View {
             
         }.padding(.horizontal)
             .animation(.easeInOut, value: textfield)
-            .actionSheet(isPresented: $showActionSheetBB) {
+            .actionSheet(isPresented: $showActionSheetWolf49) {
                 ActionSheet(title: Text(""), buttons: [
                     .default(Text("Camera")) {
-                        showCameraPickerBB = true
+                        showCameraPickerWolf49 = true
                     },
                     .default(Text("Photo Library")) {
-                        showImagePickerBB = true
+                        showImagePickerWolf49 = true
                     },
                     .cancel() // Кнопка скасування
                 ])
             }
-            .sheet(isPresented: $showImagePickerBB) {
-                ImagePickerViewBB(showImagePicker: self.$showImagePickerBB) { image in
+            .sheet(isPresented: $showImagePickerWolf49) {
+                ImagePickerViewWolf49(showImagePicker: self.$showImagePickerWolf49) { image in
                     if let image = image {
                         if let compressedData = image.jpegData(compressionQuality: 0.01) {
                             self.userPhoto = compressedData.base64EncodedString()
@@ -143,8 +143,8 @@ struct ProfileViewWolf49: View {
                     }
                 }.edgesIgnoringSafeArea(.all)
             }
-            .sheet(isPresented: $showCameraPickerBB) {
-                CameraPickerView(showImagePicker: self.$showCameraPickerBB) { image in
+            .sheet(isPresented: $showCameraPickerWolf49) {
+                CameraPickerViewWolf49(showImagePicker: self.$showCameraPickerWolf49) { image in
                     if let image = image {
                         if let compressedData = image.jpegData(compressionQuality: 0.01) {
                             self.userPhoto = compressedData.base64EncodedString()
@@ -152,7 +152,7 @@ struct ProfileViewWolf49: View {
                     }
                 }.edgesIgnoringSafeArea(.all)
             }
-            .alert(isPresented: $showAlert) {
+            .alert(isPresented: $showAlertWolf49) {
                 Alert(
                     title: Text("Saved!"),
                     message: Text("Successful data saving"),
@@ -163,7 +163,7 @@ struct ProfileViewWolf49: View {
 }
 
 #Preview {
-    ContentViewWolf49(showLoading: false, selectedTab: .profile)
+    ContentViewWolf49(showLoadingWolf49: false, selectedTabWolf49: .profile)
 }
 
 

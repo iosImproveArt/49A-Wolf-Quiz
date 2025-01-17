@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct ImagePickerViewBB: UIViewControllerRepresentable {
+struct ImagePickerViewWolf49: UIViewControllerRepresentable {
     @Binding var showImagePicker: Bool
     var completionHandler: (UIImage?) -> Void
 
@@ -19,9 +19,9 @@ struct ImagePickerViewBB: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
 
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        let parent: ImagePickerViewBB
+        let parent: ImagePickerViewWolf49
 
-        init(_ parent: ImagePickerViewBB) {
+        init(_ parent: ImagePickerViewWolf49) {
             self.parent = parent
         }
 
@@ -42,7 +42,7 @@ struct ImagePickerViewBB: UIViewControllerRepresentable {
 }
 
 
-struct CameraPickerView: UIViewControllerRepresentable {
+struct CameraPickerViewWolf49: UIViewControllerRepresentable {
     @Binding var showImagePicker: Bool
     var completionHandler: (UIImage?) -> Void
 
@@ -60,9 +60,9 @@ struct CameraPickerView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
 
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        let parent: CameraPickerView
+        let parent: CameraPickerViewWolf49
 
-        init(_ parent: CameraPickerView) {
+        init(_ parent: CameraPickerViewWolf49) {
             self.parent = parent
         }
 

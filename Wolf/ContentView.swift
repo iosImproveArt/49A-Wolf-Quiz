@@ -4,8 +4,8 @@ import SwiftUI
 
 struct ContentViewWolf49: View {
     @AppStorage("notificationsAvalible") var notificationsAvalible = true
-    @State var showLoading = true
-    @State var selectedTab: Tabs = .quiz
+    @State var showLoadingWolf49 = true
+    @State var selectedTabWolf49: TabsWolf49 = .quiz
     
     var itemPrice: Double = 149.99
     var userPoints: Int = 350
@@ -25,9 +25,9 @@ struct ContentViewWolf49: View {
             NavigationView {
                 ZStack(alignment: .bottom) {
                     VStack {
-                        topBar
+                        topBarWolf49
                         
-                        switch selectedTab {
+                        switch selectedTabWolf49 {
                         case .quiz:
                             QuestionPickViewWolf49()
                         case .profile:
@@ -37,26 +37,26 @@ struct ContentViewWolf49: View {
                         case .questions:
                             QuestionsViewWolf49()
                         }
-                        tapBar
-                    }.background(2, padding: 0)
+                        tapBarWolf49
+                    }.backgroundWolf49(2, padding: 0)
                 }
             }
             
-            LoadingViewSQ(showView: $showLoading)
-                .opacity(showLoading ? 1: 0)
-                .onChange(of: showLoading) { newValue in
+            LoadingViewSQ(showView: $showLoadingWolf49)
+                .opacity(showLoadingWolf49 ? 1: 0)
+                .onChange(of: showLoadingWolf49) { newValue in
                     AppDelegate.orientationLock = .portrait
                 }
         }
     }
     
-    private var topBar: some View {
+    private var topBarWolf49: some View {
         HStack {
             NavigationLink {
                 PrivacyViewWolf49(showLoading: .constant(true), fromMainView: true)
             } label: {
                 Text("Privacy policy")
-                    .withFont(size: 16, weight: .light, color: .hex("FFFFFF"))
+                    .withFontWolf49(size: 16, weight: .light, color: .hex("FFFFFF"))
             }
             
             Spacer()
@@ -66,7 +66,7 @@ struct ContentViewWolf49: View {
                 if notificationsAvalible {
                     NotificationManagerWolf49.shared.createDailyNotification()
                 } else {
-                    NotificationManagerWolf49.shared.removePendingNotifications()
+                    NotificationManagerWolf49.shared.removePendingNotificationsWolf49()
                 }
             } label: {
                 Image("notification.label")
@@ -75,43 +75,43 @@ struct ContentViewWolf49: View {
         }.padding(.horizontal)
     }
     
-    private var tapBar: some View {
+    private var tapBarWolf49: some View {
         HStack {
             Button {
-                selectedTab = .quiz
+                selectedTabWolf49 = .quiz
             } label: {
                 Image("tab 1")
-                    .renderingMode(selectedTab == .quiz ? .template: .original)
+                    .renderingMode(selectedTabWolf49 == .quiz ? .template: .original)
                     .foregroundStyle(.white)
             }
             
             Spacer()
             
             Button {
-                selectedTab = .profile
+                selectedTabWolf49 = .profile
             } label: {
                 Image("tab 2")
-                    .renderingMode(selectedTab == .profile ? .template: .original)
+                    .renderingMode(selectedTabWolf49 == .profile ? .template: .original)
                     .foregroundStyle(.white)
             }
             
             Spacer()
             
             Button {
-                selectedTab = .facts
+                selectedTabWolf49 = .facts
             } label: {
                 Image("tab 3")
-                    .renderingMode(selectedTab == .facts ? .template: .original)
+                    .renderingMode(selectedTabWolf49 == .facts ? .template: .original)
                     .foregroundStyle(.white)
             }
             
             Spacer()
             
             Button {
-                selectedTab = .questions
+                selectedTabWolf49 = .questions
             } label: {
                 Image("tab 4")
-                    .renderingMode(selectedTab == .questions ? .template: .original)
+                    .renderingMode(selectedTabWolf49 == .questions ? .template: .original)
                     .foregroundStyle(.white)
             }
         }.padding(.horizontal, 40)
@@ -123,19 +123,19 @@ struct ContentViewWolf49: View {
                 .edgesIgnoringSafeArea(.all)
             }
             .cornerRadius(41)
-            .padding(.bottom, isSE ? -50: -60)
+            .padding(.bottom, isSEWolf49 ? -50: -60)
     }
 }
 
 #Preview {
-    ContentViewWolf49(showLoading: false)
+    ContentViewWolf49(showLoadingWolf49: false)
 }
 
-
-enum Tabs {
+enum TabsWolf49 {
     case quiz
     case profile
     case facts
     case questions
 }
+
 

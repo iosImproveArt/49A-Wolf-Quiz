@@ -4,7 +4,7 @@ import SwiftUI
 
 struct FactsViewWolf49: View {
     @State var timer: Timer?
-    @State var selectedFact: FactWolf49? = facts.randomElement()!
+    @State var selectedFact: FactWolf49? = factsWolf49.randomElement()!
     @State var showSheet = false
     
      var itemPrice: Double = 149.99
@@ -30,12 +30,12 @@ struct FactsViewWolf49: View {
                     .overlay {
                         VStack {
                             Text(fact.title)
-                                .withFont(size: 20, weight: .regular, color: .hex("A5FFFE"))
+                                .withFontWolf49(size: 20, weight: .regular, color: .hex("A5FFFE"))
                                 .padding(.top, 16)
                                 .padding(.horizontal)
                             Spacer()
                             Text(fact.content)
-                                .withFont(size: 19.5, weight: .thin)
+                                .withFontWolf49(size: 19.5, weight: .thin)
                                 .padding(.horizontal)
                                 .padding(.vertical, 8)
                         }
@@ -52,7 +52,7 @@ struct FactsViewWolf49: View {
                         .frame(height: 30)
                         .overlay {
                             Text("Read the full")
-                                .withFont(size: 15.6, weight: .regular, color: .hex("0D0D0D"))
+                                .withFontWolf49(size: 15.6, weight: .regular, color: .hex("0D0D0D"))
                         }
                 }.padding(.bottom)
                 
@@ -63,7 +63,7 @@ struct FactsViewWolf49: View {
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                         withAnimation(.easeInOut(duration: 1)) {
-                            selectedFact = facts.randomElement()!
+                            selectedFact = factsWolf49.randomElement()!
                         }
                     }
                 } label: {
@@ -73,7 +73,7 @@ struct FactsViewWolf49: View {
                         .frame(width: 150)
                         .overlay {
                             Text("NEXT")
-                                .withFont(size: 14.6, weight: .regular)
+                                .withFontWolf49(size: 14.6, weight: .regular)
                         }
                 }
             }
@@ -82,21 +82,21 @@ struct FactsViewWolf49: View {
             Spacer()
             
         }.sheet(isPresented: $showSheet) {
-            sheetView
+            sheetViewWolf49
                 .presentationDetents([.fraction(0.86)])
         }
     }
     
-    private var sheetView: some View {
+    private var sheetViewWolf49: some View {
         VStack {
             if let fact = selectedFact {
                 Text(fact.title)
-                    .withFont(size: 22, weight: .regular, color: .hex("A5FFFE"))
+                    .withFontWolf49(size: 22, weight: .regular, color: .hex("A5FFFE"))
                     .padding(.top, 12)
                 
                 ScrollView {
                     Text(fact.content)
-                        .withFont(size: 19.5, weight: .thin)
+                        .withFontWolf49(size: 19.5, weight: .thin)
                         .padding(.horizontal)
                         .padding(.vertical, 8)
                 }
@@ -112,7 +112,7 @@ struct FactsViewWolf49: View {
                         .frame(height: 55)
                         .overlay {
                             Text("Close")
-                                .withFont(size: 15.5, weight: .light)
+                                .withFontWolf49(size: 15.5, weight: .light)
                         }
                 }.onTapGesture {
                     showSheet = false
@@ -127,7 +127,7 @@ struct FactsViewWolf49: View {
 }
 
 #Preview {
-    ContentViewWolf49(showLoading: false, selectedTab: .facts)
+    ContentViewWolf49(showLoadingWolf49: false, selectedTabWolf49: .facts)
 }
 
 
@@ -136,7 +136,7 @@ struct FactWolf49 {
     let content: String // (великий опис факту)
 }
 
-fileprivate let facts: [FactWolf49] = [
+fileprivate let factsWolf49: [FactWolf49] = [
     FactWolf49(
         title: "The Immensity of the Universe",
         content: "The universe is incomprehensibly vast. It is estimated to be about 93 billion light years in diameter, and it continues to expand. Within this vast expanse, there are approximately 100 billion galaxies, each containing millions or even billions of stars. This scale of size and distance is difficult for the human mind to grasp. The observable universe is just a fraction of the entire cosmos, leaving much still unknown."

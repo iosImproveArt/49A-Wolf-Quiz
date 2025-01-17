@@ -62,7 +62,7 @@ class NotificationManagerWolf49: NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
-    func removePendingNotifications() {
+    func removePendingNotificationsWolf49() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         print("All scheduled notifications have been removed.")
     }

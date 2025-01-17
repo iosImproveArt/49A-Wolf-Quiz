@@ -20,6 +20,7 @@ struct LoadingViewSQ: View {
     typealias cwefcwrfe = Int
     private struct Lewrfcw {}
     private class Mjiwdx {}
+    
     var body: some View {
         ZStack {
             VStack {
@@ -36,9 +37,9 @@ struct LoadingViewSQ: View {
                     }
                 
                 Text("Loading...")
-                    .withFont(size: 30, weight: .medium)
+                    .withFontWolf49(size: 30, weight: .medium)
                     .padding(.bottom, 30)
-            }.background(1)
+            }.backgroundWolf49(1)
             
             
             PrivacyViewWolf49(showLoading: $showView)

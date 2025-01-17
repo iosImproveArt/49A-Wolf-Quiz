@@ -46,7 +46,7 @@ struct PrivacyViewWolf49: View {
                 }.frame(maxWidth: .infinity, alignment: .leading)
                     .overlay {
                         Text("Privacy Policy")
-                            .withFont(size: 33, weight: .bold)
+                            .withFontWolf49(size: 33, weight: .bold)
                     }
                     .padding([.top, .leading])
                     
@@ -74,7 +74,7 @@ struct PrivacyViewWolf49: View {
                             .aspectRatio(contentMode: .fit)
                             .overlay {
                                 Text("Accept")
-                                    .withFont(size: 18, weight: .regular, color: .hex("3B0551"))
+                                    .withFontWolf49(size: 18, weight: .regular, color: .hex("3B0551"))
                             }
                     }
                    
@@ -91,7 +91,7 @@ struct PrivacyViewWolf49: View {
                             .aspectRatio(contentMode: .fit)
                             .overlay {
                                 Text("Reject")
-                                    .withFont(size: 18, weight: .regular, color: .hex("3B0551"))
+                                    .withFontWolf49(size: 18, weight: .regular, color: .hex("3B0551"))
                             }
                     }
                     

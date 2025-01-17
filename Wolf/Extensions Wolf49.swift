@@ -5,21 +5,21 @@ import SwiftUI
 
 
 extension View {
-    var isSE: Bool {
+    var isSEWolf49: Bool {
         return UIScreen.main.bounds.height < 680
     }
     
-    var screen: CGRect {
+    var screenWolf49: CGRect {
         return UIScreen.main.bounds
     }
     
-    func withFont(size: CGFloat, weight: Font.Weight, color: Color = .white) -> some View {
+    func withFontWolf49(size: CGFloat, weight: Font.Weight, color: Color = .white) -> some View {
         return self
             .font(.system(size: size, weight: weight))
             .foregroundStyle(color)
     }
     
-    func background(_ number: Int, padding: CGFloat = 12) -> some View {
+    func backgroundWolf49(_ number: Int, padding: CGFloat = 12) -> some View {
         self
             .padding(padding)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -29,10 +29,10 @@ extension View {
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             )
-            .navigationItemsClose()
+            .navigationItemsCloseWolf49()
     }
     
-    func navigationItemsClose() -> some View {
+    func navigationItemsCloseWolf49() -> some View {
         self
             .navigationBarBackButtonHidden()
             .navigationTitle("")
@@ -67,12 +67,12 @@ extension Color {
     }
 }
 
-func hideKeyboard() {
+func hideKeyboardWolf49() {
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
 
 extension ScrollView {
-    func gradientTopAndBottom(height: CGFloat = 10) -> some View {
+    func gradientTopAndBottomWolf49(height: CGFloat = 10) -> some View {
         self
             .mask(
                 VStack(spacing: 0) {

@@ -26,9 +26,9 @@ struct QuestionPickViewWolf49: View {
             Spacer()
             
             Text("Choose a quiz mode")
-                .withFont(size: 30.57, weight: .medium, color: .hex("FFFFFF"))
+                .withFontWolf49(size: 30.57, weight: .medium, color: .hex("FFFFFF"))
             
-            VStack(spacing: isSE ? 20: 60) {
+            VStack(spacing: isSEWolf49 ? 20: 60) {
                 NavigationLink {
                     QuestionViewWolf49(type: .oneP)
                 } label: {
@@ -55,5 +55,5 @@ struct QuestionPickViewWolf49: View {
 }
 
 #Preview {
-    ContentViewWolf49(showLoading: false, selectedTab: .quiz)
+    ContentViewWolf49(showLoadingWolf49: false, selectedTabWolf49: .quiz)
 }
